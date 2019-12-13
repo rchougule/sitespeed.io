@@ -4,11 +4,11 @@ mixin headerLink(id, name)
       - active = menu===id ? 'active' : ''
       a(href= rootPath + id + '.html', class=active)= name
 
-.darkblue.nav
+.darkblue.nav(style='background-color:#172432; margin-right:2em')
   .navgrid
     .logo
         a(href='https://www.sitespeed.io')
-          img.navbar-brand(src= assetsPath + 'img/sitespeed.io-logo.png', width='162', height='50', alt='sitespeed.io logo')
+          img.navbar-brand(src= assetsPath + 'img/logo.svg', height='50', alt='sitespeed.io logo')
     ul
       +headerLink('index', 'Summary')
       +headerLink('detailed', 'Detailed Summary')
